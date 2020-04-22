@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html ng-app="shop" lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="shop.js"></script>
+
+    </script>
+    <meta charset="utf-8">
+    <title>Anything4You</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body ng-controller="ItemController">
+
+    <div class="header">
+        <h1>Anything4You</h1>
+    </div>
+
+    <div class ="searchbar">
+      <select id="cars">
+        <option value=" ">Filter Search</option>
+        <option value="gaming">Gaming</option>
+        <option value="apparel">Apparel</option>
+        <option value="home">Home and Decoration</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
+
+      <div class="search-container">
+        <input type="text" id="search" placeholder="search">
+        <button class="searchButton">Go</button>
+      </div>
+
+      <div>
+        <a href="./account.html">Account</a>
+        <a href="./cart.html">Cart</a>
+      </div>
+    </div>
+
+    <nav class ="filters">
+      <h3>Price Range</h3>
+      <select id="priceOptions">
+        <option value=" "> Select an option</option>
+        <option value="50"> >$50</option>
+        <option value="gaming">$50-$100</option>
+        <option value="apparel">$100-$150</option>
+        <option value="home">$150+</option>
+
+      </select>
+    </nav>
+
+    <article class="images">
+      <a href = "./Assets/images/1.jpg">
+        <div ng-repeat="img in images"class="imageWithText">
+          <img src="{{img}}" alt="Playstore balance card">
+          <p>$10.50<br>rating: 3.5</p>
+        </div>
+      </a>
+
+
+
+    </article>
+
+
+
+  </body>
+</html>
