@@ -1,0 +1,35 @@
+.header{
+  margin:auto;
+  color:black;
+  text-align: center;
+  background-color:deepskyblue;
+}
+div{
+  margin:5px;
+}
+p{
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+span{
+  float: left;
+  width: 20%;
+}
+
+input{
+
+}
+
+.card{
+  background-color: #f1f1f1;
+}
+
+.cart{
+  background-color: #f1f1f1;
+}
+
+.total{
+
+}
