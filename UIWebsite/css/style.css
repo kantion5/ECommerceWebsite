@@ -37,7 +37,8 @@
   float: left;
   width: 30%;
   background-color: #ccc;
-  min-height: 500px
+  min-height: 500px;
+  position: sticky;
 }
 
 .images{
