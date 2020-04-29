@@ -42,7 +42,17 @@ shop.controller('ItemController', function ItemController($scope){
     {img1 : "./Assets/images/37.jpg", rating: "Rating: 4.6", price: "$50.99"},
     {img1 : "./Assets/images/38.jpg", rating: "Rating: 5.0", price: "$110.00"},
     {img1 : "./Assets/images/39.jpg", rating: "Rating: 4.2", price: "$103.00"},
-    {img1 : "./Assets/images/40.jpg", rating: "Rating: 4.1", price: "$12.99"}
+    {img1 : "./Assets/images/40.jpg", rating: "Rating: 4.5", price: "$12.99"},
+    {img1 : "./Assets/images/41.jpg", rating: "Rating: 4.3", price: "$12.99"},
+    {img1 : "./Assets/images/42.jpg", rating: "Rating: 4.1", price: "$15.99"},
+    {img1 : "./Assets/images/43.jpg", rating: "Rating: 4.5", price: "$12.99"},
+    {img1 : "./Assets/images/44.jpg", rating: "Rating: 4.6", price: "$16.99"},
+    {img1 : "./Assets/images/45.jpg", rating: "Rating: 4.2", price: "$160.00"},
+    {img1 : "./Assets/images/46.jpg", rating: "Rating: 4.2", price: "$45.00"},
+    {img1 : "./Assets/images/47.jpg", rating: "Rating: 3.0", price: "$30.00"},
+    {img1 : "./Assets/images/48.jpg", rating: "Rating: 3.6", price: "$75.00"},
+    {img1 : "./Assets/images/49.jpg", rating: "Rating: 4.1", price: "$50.00"},
+    {img1 : "./Assets/images/50.jpg", rating: "Rating: 4.6", price: "$12.99"}
   ];
 
 });
