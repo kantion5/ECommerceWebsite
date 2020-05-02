@@ -1,6 +1,15 @@
 var shop = angular.module('shop', []);
+shop.service('itemHandler', function(){
+    var item = {};
+    this.getItem = function(){
+      return item;
+    }
+    this.setItem = function(item){
+      this.item = item;
+    }
+})
 
-shop.controller('ItemController', function ItemController($scope){
+shop.controller('ItemController', function ItemController($scope, itemHandler){
   $scope.temp = 4;
   $scope.selectTag = '';
   $scope.cPrice='';
@@ -56,5 +65,17 @@ shop.controller('ItemController', function ItemController($scope){
     {img1 : "./Assets/images/49.jpg", rating: "Rating: 4.1", price: "$50.00", tag:"Kitchen", name: "Non-Stick Pan", alt: ""},
     {img1 : "./Assets/images/50.jpg", rating: "Rating: 4.6", price: "$12.99", tag:"Kitchen", name: "Knife Sharpening Steel", alt: ""}
   ];
+  $scope.selectedImg = function(item){
+    itemHandler.setItem(item);
+  }
+});
+
+shop.controller('ProductController', function ProductController($scope, itemHandler){
+  $scope.init = function(){
+    var temp = itemHandler.getItem();
+    $scope.image = temp.img1;
+
+  }
+
 
 });
